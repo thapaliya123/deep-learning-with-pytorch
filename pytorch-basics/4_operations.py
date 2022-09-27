@@ -26,7 +26,7 @@ torch.manual_seed(50)
 # 1.Addition
 tensor1 = torch.randn(3, 3) # 3x3 shape
 tensor2 = torch.randn(3, 3) # 3x3 shape
-addition = tensor1 + tensor2 # or addition = torch.add(tensor1 + tensor2)
+addition = tensor1 + tensor2 # or addition = torch.add(tensor1, tensor2)
 print("\nAddition of two tensor")
 print(f"tensor 1: \n{tensor1}")
 print(f"tensor2: \n{tensor2}")
