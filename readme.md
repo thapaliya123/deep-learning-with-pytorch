@@ -86,9 +86,50 @@
             <ul>
                 <li>batch_mat_1 shape = (2, 3, 2)</li>
                 <li>batch_mat_2 shape = (2, 2, 3)</li>
-                <li>out_matrix = torch.bmm(batch_mat_1, batch_mat_2)</li>
+                <li>out_mat shape = (2, 3, 3)</li>
+                <li>torch.bmm(batch_mat_1, batch_mat_2)</li>
             </ul>
         </td>
         <td>performs a batch matrix-matrix product of matrices.</td>
+    </tr>
+    <tr>
+        <td>min()</td>
+        <td>tensor.min(axis=1)</td>
+        <td>returns minimum value of all elements in the input tensor. If axis is passed (axis=1) then returns minimum value with indices along the passed axis.</td>
+    </tr>
+    <tr>
+        <td>max()</td>
+        <td>torch.max(axis=1)</td>
+        <td>returns maximum value of all elements in the input tensor. If axis is passed (axis=1) then returns maximum value with indices along the passed axis.</td>
+    </tr>
+    <tr>
+        <td>argmin()</td>
+        <td>tensor.argmin(axis=1)</td>
+        <td>returns the index of minimum value along the passed axis (axis=1/axis=0).</td>
+    </tr>
+    <tr>
+        <td>argmax()</td>
+        <td>torch.argmax(axis=1)</td>
+        <td>returns the index of maximum value along the passed axis (axis=1/axis=0).</td>
+    </tr>
+    <tr>
+        <td>torch.clamp()</td>
+        <td>torch.clamp(tensor_to_clamp, min=0, max=None)</td>
+        <td>clamp operation clamps the input tensor in the specified value range passed in min and max attribute. ReLU is a special case of clamp operations.</td>
+    </tr>
+    <tr>
+        <td>cat()</td>
+        <td>
+            <ol>
+                <li>torch.cat((tensor1, tensor2), axis=0)</li>
+                <li>torch.cat((tensor1, tensor2), axis=1)</li>
+            </ol>
+        </td>
+        <td>
+            <ol>
+                <li>concatenates two tensor along axis = 0</li>
+                <li>concatenates two tensor along axis = 1</li>
+            </ol>
+        </td>
     </tr>
 </table>
