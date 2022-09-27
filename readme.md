@@ -5,8 +5,8 @@
     - It provdies flexibility to a programmer about how to create, combine, and process tensors as they flow through a network (called computation graph).
     - It provides easy access to a computational graph.
 
-# Pytorch Basics
-
+# [Pytorch Basics](https://github.com/thapaliya123/deep-learning-with-pytorch/tree/master/pytorch-basics)
+**For python examples:** [click here](https://github.com/thapaliya123/deep-learning-with-pytorch/tree/master/pytorch-basics)
 <table>
     <caption><b><i>Tensor Initailization</i></b></caption>
     <tr>
