@@ -47,7 +47,7 @@ x = torch.rand(2, 3) #input vector, shape: (2, 3)
 W = torch.rand(3, 3) # random weight, shape: (3, 3)
 h = torch.matmul(x, W) # activation output, shape: (2, 3)
 print(f"3.Matrix multiplication i.e. matmul(x, W):\n{h}")
-#
+#s
 # 5. Elementwise multplication
 # shape of two tensors must be same
 elementwise_product = tensor1*tensor2
