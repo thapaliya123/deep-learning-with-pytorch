@@ -171,3 +171,36 @@
         </td>
     </tr>
 </table>
+
+<table>
+    <caption><b><i>tensor and numpy array</i></b></caption>
+    <tr>
+        <th>Methods</th>
+        <th>Descriptions</th>
+    </tr>
+    <tr>
+        <td>torch.from_numpy(numpy_arr)</td>
+        <td>converts numpy array to pytorch tensor</td>
+    </tr>
+    <tr>
+        <td>
+            tensor.numpy()
+            <ol>
+                <li>tensor_cpu.numpy()</li>
+                <li>tensor_gpu.cpu().numpy()</li>
+            </ol>
+        </td>
+        <td>
+            Converts pytorch tensor to numpy array
+            <ol>
+                <li>converts pytorch tensor in CPU to numpy array</li>
+                <li>Brings pytorch tensor to CPU from GPU and converts to numpy array.</li>
+            </ol>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
