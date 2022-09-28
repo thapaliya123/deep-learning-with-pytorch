@@ -133,3 +133,41 @@
         </td>
     </tr>
 </table>
+
+<table>
+    <caption><b><i>GPU Support</i></b></caption>
+    <tr>
+        <th>Methods</th>
+        <th>Descriptions</th>
+    </tr>
+    <tr>
+        <td>torch.cuda.is_available()</td>
+        <td>Test for GPU availability in your system. If True GPU is available else GPU is not available</td>
+    </tr>
+    <tr>
+        <td>torch.cuda.device_count()</td>
+        <td>Returns available GPU count in your system. Example: If you have two GPUs then it will return 2.</td>
+    </tr>
+    <tr>
+        <td>
+        torch.device()  
+        <ol>
+            <li>device = torch.device('cuda')</li>
+            <li>device = torch.device('cpu')</li>
+        </ol>
+        </td>
+        <td>Defines device object that points to GPU or CPU according to user preferences (passed as an argument).</td>
+    </tr>
+    <tr>
+        <td>tensor.to(device)</td>
+        <td>All the created tensors are stored on CPU by default, but we need to push them to the GPU for computing using GPU. E.g sample_tensor.to(torch.devce('cuda'))</td>
+    </tr>
+    <tr>
+        <td>
+            tensor_cpu = tensor_gpu.cpu()
+        </td>
+        <td>
+            Brings tensor back to the CPU from GPU. Handy function if you want to convert tensor to numpy array i.e. you need to bring your tensor to the cpu from GPU and convert tensor to numpy array for further operations.
+        </td>
+    </tr>
+</table>

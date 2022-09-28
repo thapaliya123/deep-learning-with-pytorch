@@ -5,6 +5,7 @@
     - pip install torch
 """
 
+import numbers
 import torch
 
 # check imported torch version
@@ -38,3 +39,4 @@ rows_index = [0, 3]
 col_index = [0, 3]
 fancy_sliced = sample_tensor[rows_index, col_index]
 print(f"\nFancy Indexing: Sliced rows=[1, 4] and cols=[1, 4]\n {fancy_sliced}")
+
