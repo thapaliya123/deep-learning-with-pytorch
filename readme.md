@@ -56,10 +56,16 @@
         <td>output shape of the input tensor. shape is an alias of size().</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>torch.view(input, shape)</td>
+        <td>input_tensor.view(1, -1)</td>
+        <td>useful in reshaping, acts on contiguous memory block.</td>
     </tr>
+    <tr>
+        <td>torch.reshape(input, shape)</td>
+        <td>input_tensor.reshape(1, -1)</td>
+        <td>returns a tensor with the same data and number of elements as input, but with the specified shape. When possible, the returned tensor will be a view of input, otherwise it will be a copy. acts on both contiguous or non-contiguous memory block</td>
+    </tr>
+    
 </table>
 <table>
     <caption><b><i>Tensor Operations</i></b></caption>
