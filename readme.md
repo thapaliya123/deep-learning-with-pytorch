@@ -65,8 +65,13 @@
         <td>input_tensor.reshape(1, -1)</td>
         <td>returns a tensor with the same data and number of elements as input, but with the specified shape. When possible, the returned tensor will be a view of input, otherwise it will be a copy. acts on both contiguous or non-contiguous memory block</td>
     </tr>
-    
+    <tr>
+        <td>torch.permute(tensor, dims)</td>
+        <td>torch.permute(tensor, (2, 1, 0))</td>
+        <td>Returns a view of the original tensor input with its dimensions permuted. In the example, dimension of 1 and 3 are interchanged. It original tensor is of shape (224, 224, 3) then after permute operations new dimesion will be (3, 224, 224).</td>
+    </tr>
 </table>
+
 <table>
     <caption><b><i>Tensor Operations</i></b></caption>
     <tr>
@@ -228,3 +233,10 @@
         <td></td>
     </tr>
 </table>
+
+## References
+- https://pytorch.org/docs/stable/torch.html
+- https://pytorch.org/docs/stable/index.html#pytorch-documentation
+- https://pytorch.org/docs/stable/cuda.html
+- https://github.com/yunjey/pytorch-tutorial
+- https://www.geeksforgeeks.org/how-to-squeeze-and-unsqueeze-a-tensor-in-pytorch
