@@ -1,4 +1,0 @@
-numpy==1.23.3
-Pillow==9.2.0
-torch==1.12.1
-typing-extensions==4.3.0
