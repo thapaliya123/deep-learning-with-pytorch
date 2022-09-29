@@ -44,6 +44,24 @@
 </table>
 
 <table>
+    <caption><b><i>Tensor Shape</i></b></caption>
+    <tr>
+        <th>methods</th>
+        <examples></examples>
+        <th>descriptions</th>
+    </tr>
+    <tr>
+        <td>shape()</td>
+        <td>input_tensor.shape</td>
+        <td>output shape of the input tensor. shape is an alias of size().</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<table>
     <caption><b><i>Tensor Operations</i></b></caption>
     <tr>
         <th>methods</th>
